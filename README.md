@@ -154,13 +154,23 @@ and value-motivated traders. The former submit limit orders to reduce trading co
 
 * Matthew Dixon, "**_Sequence classification of the limit order book using recurrent neural networks_**", Journal of Computational Science, Volume 24, 2018, Pages 277-286, ISSN 1877-7503, [[URL](http://www.sciencedirect.com/science/article/pii/S1877750317309675)] [[PDF](https://www.sciencedirect.com/science/article/pii/S1877750317309675)] [[Google Scholar (7)](https://scholar.google.com/scholar?cluster=11756832130786467866&hl=en&as_sdt=2005&sciodt=0,5)]
 
+
 * Sirignano, Justin, "**_Deep Learning for Limit Order Books_**" (May 16, 2016). [[SSRN](https://ssrn.com/abstract=2710331)] [[PDF](http://www.smallake.kr/wp-content/uploads/2017/04/1601.01987.pdf)] [[Google Scholar (14)](https://scholar.google.com/scholar?cluster=14762137393827403270&hl=en&as_sdt=2005&sciodt=0,5)]
 
+  Interesting papers cited:
+  
+  * Cartea, Álvaro, Ryan Donnelly, and Sebastian Jaimungal. "**_Enhancing trading strategies with order book signals._**" Applied Mathematical Finance (2018): 1-35. [[PDF](http://www.smallake.kr/wp-content/uploads/2015/11/SSRN-id2668277.pdf)] [[Google Scholar (17)](https://scholar.google.com/scholar?cluster=3694311355214648861&hl=en&as_sdt=0,5)]
+
+  * B. Zheng, E. Moulines and F. Abergel, "**_Price Jump Prediction in a Limit Order Book_**" _Journal of Mathematical Finance_, Vol. 3 No. 2, 2013, pp. 242-255 [[PDF](http://file.scirp.org/pdf/JMF_2013052414582995.pdf)] [[Google Scholar (20)](https://scholar.google.com/scholar?cluster=8926587948972519125&hl=en&as_sdt=2005&sciodt=0,5)]
+
+  * Avellaneda, Marco, and Sasha Stoikov. "**_High-frequency trading in a limit order book._**" Quantitative Finance 8.3 (2008): 217-224. [[PDF](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.464.5771&rep=rep1&type=pdf)] [[Google Scholar (270)](https://scholar.google.com/scholar?cluster=5527447623732412778&hl=en&as_sdt=0,5)]
+
+  * Avellaneda, Marco, Josh Reed, and Sasha Stoikov. "**_Forecasting prices from Level-I quotes in the presence of hidden liquidity._**" Algorithmic Finance 1.1 (2011): 35-43. [[PDF](https://content.iospress.com/download/algorithmic-finance/af004?id=algorithmic-finance%2Faf004)] [[Google Scholar (35)](https://scholar.google.com/scholar?cluster=8343363853300442598&hl=en&as_sdt=0,5)]
+  
 * D. Palguna and I. Pollak, "**_Mid-Price Prediction in a Limit Order Book,_**" (December 31, 2014) [[SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2544361)] [[PDF](https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID2544361_code1615147.pdf?abstractid=2544361&mirid=1)]  [[Google Scholar (6)](https://scholar.google.com/scholar?cluster=10479489130084858948&hl=en&as_sdt=0,5)]
 
-* B. Zheng, E. Moulines and F. Abergel, "**_Price Jump Prediction in a Limit Order Book_**" _Journal of Mathematical Finance_, Vol. 3 No. 2, 2013, pp. 242-255 [[PDF](http://file.scirp.org/pdf/JMF_2013052414582995.pdf)] [[Google Scholar (20)](https://scholar.google.com/scholar?cluster=8926587948972519125&hl=en&as_sdt=2005&sciodt=0,5)]
-
 * Kearns, Michael, and Yuriy Nevmyvaka. "**_Machine learning for market microstructure and high frequency trading_**." High Frequency Trading: New Realities for Traders, Markets, and Regulators (2013). [[PDF](http://www.smallake.kr/wp-content/uploads/2014/01/KearnsNevmyvakaHFTRiskBooks.pdf)] [[Google Scholar (22)](https://scholar.google.com/scholar?cluster=3674704136917952284&hl=en&as_sdt=0,5)]
+
 
 * Rama Cont, Arseniy Kukanov, Sasha Stoikov. "**_The Price Impact of Order Book Events_**". 2011 [[PDF](https://pdfs.semanticscholar.org/d064/5eb3d744f9e962ff09b8a5e9156f2147e983.pdf)] [[Google Scholar (194)](https://scholar.google.com/scholar?cluster=15147414922236014366&hl=en&as_sdt=0,5)]
 
