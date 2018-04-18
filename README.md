@@ -1,5 +1,7 @@
-# Awesome Machine Learning for Trading
-A curated list of awesome application of machine learning in stock trading.
+# Awesome Machine Learning for Trading <sup>*)</sup>
+A curated list of anything related to the application of machine learning in stock trading.
+
+<sup>*)</sup> This work is sponsored by [Stocks Asia, berita saham Indonesia (stock news search engine)](https://stocks.asia) and [Stosia.ai](https://stosia.ai).
 
 ## Table of Contents
 
@@ -16,7 +18,6 @@ List of companies that have successfully applied machine learning or deep learni
 * [Numerai](https://numer.ai/) - An A.I hedge fund with crowd sourced algorithms. People can submit algorithm and get paid if it works. See the corporate introduction video [here](https://youtu.be/dhJnt0N497c), and longer interviews with the founder Richard Craib [here](https://www.youtube.com/watch?v=yY-Sg7KhRhU) and [here](https://www.youtube.com/watch?v=yY-Sg7KhRhU).
 * [Alpaca](https://www.alpaca.ai/) - a platform where end users mark their trading entries/exits in the chart, and a deep learning platform figures out the model to detect such patterns. See their video presentation [here](https://youtu.be/FoQKCeDuPiY)
 * [Binatix](http://www.binatix.com/) - there's nothing on their website, but you can read their coverage [Introducing Binatix: A Deep Learning Trading Firm That's Already Profitable](https://www.recode.net/2014/9/10/11630724/introducing-binatix-a-deep-learning-trading-firm-thats-already) (actually there's not much information here either).
-
  
 ## Conferences, Summits
 
@@ -24,13 +25,21 @@ List of companies that have successfully applied machine learning or deep learni
 
 ## Books
 
-* Marcos Lopez de Prado: [**_Advances in Financial Machine Learning_**](http://a.co/gKz8hpa) (2018). 
+### Structuring Financial Machine Learning Company
+
+* Marcos Lopez de Prado: [**_Advances in Financial Machine Learning_**](http://a.co/gKz8hpa). John Wiley & Sons, 2018. [[Google Scholar (2)](https://scholar.google.com/scholar?lookup=0&q=Advances+in+Financial+Machine+Learning&hl=en&as_sdt=0,5)] 
 
   This is a very good book describing how to structure the use of machine learning in finance. The [first chapter](https://poseidon01.ssrn.com/delivery.php?ID=521087021095126103013122009108119098033054052039028007076097107111067094069091074068054032007059016029043022070095121122119022016038095048036074098066064114066030068061049125122024004103070072091079107084089027065116124122101097090028025105007065020&EXT=pdf) is available online and it outlines the main ideas that will be taught in the rest of the books. This book is written by someone who knows both finance and machine learning subjects very well. The author is an expert in mathematical finance, has written many papers on machine learning and supercomputing, and has $13 billion fund under his management. He knows what he's talking about.
   
   In this book, he describes 1) why many failed to apply ML to finance, and 2) what it takes to succeed. And he argues that what it takes to succeed is first you must realize that there is no silver bullet, no magic ML model that will put you in the list of billionaires, and what you must do instead is to establish the infrastructure and process to facilitate the creation and development of these models.
   
   Be warned though that you won't find any state of the art ML techniques for finance in this book. No no no, that is just not going to happen with finance culture in this planet. As this book says, it won't tell you how to make a car, but how to make the car factory. 
+
+### Market Microstructure
+
+* Schmidt, Anatoly B. [**_Financial markets and trading: an introduction to market microstructure and trading strategies._**](http://a.co/fqw6BrI) Vol. 637. John Wiley & Sons, 2011. [[Google Scholar (28)](https://scholar.google.com/scholar?cluster=2144017200463163368&hl=en&as_sdt=0,5)]
+
+
 
 ## Papers, Thesis
 
@@ -44,17 +53,17 @@ List of companies that have successfully applied machine learning or deep learni
 
 #### Using DBN
 
-* C. Zhu et al.: **_A Stock Decision Support System based on DBNs_**, Journal of Computational Information Systems 10: 2 883–893 (2014) [[PDF](http://or.nsfc.gov.cn/bitstream/00001903-5/324239/1/1000009681354.pdf)] [[Google Scholar (10)](https://scholar.google.com/scholar?cluster=6680487426698004620&hl=en&as_sdt=0,5)]
+* C. Zhu et al.: **_A Stock Decision Support System based on DBNs_**, Journal of Computational Information Systems 10: 2 883-893 (2014) [[PDF](http://or.nsfc.gov.cn/bitstream/00001903-5/324239/1/1000009681354.pdf)] [[Google Scholar (10)](https://scholar.google.com/scholar?cluster=6680487426698004620&hl=en&as_sdt=0,5)]
 
     Using oscilation box indicator on EOD data as trading system. DBN is used for learning the data and predict box boundary. Buy if price breaks the upper bound, and vice versa. The model has 14 inputs (indicators) such as the standard HLOCV, MA, ROC, RSI, and MACD indicators. Each indicators are normalized and given different weights based on their influence on the price before they're given to DBN as input. Gray correlation degree is used to calculate these influence weights. Data are 400 stocks in S&P 500, with 1200 days and 400 days of EOD data for training and testing dataset respectively.
     
-    The results look very good, the model can significantly outperform the benchmark in all four conditions: bull, bear, fluctuating bull, and fluctuating bear situations. However some careful decisions need to be done with regard to hyperparameter selections such as training data duration, the box window sizes, and transaction rate σ, and there is overfitting concern here.
+    The results look very good, the model can significantly outperform the benchmark in all four conditions: bull, bear, fluctuating bull, and fluctuating bear situations. However some careful decisions need to be done with regard to hyperparameter selections such as training data duration, the box window sizes, and transaction rate, and there is overfitting concern here.
     
 
 
 #### Using Multi-agent Reinforcement Learning
 
-* Lee J.W., O J. (2002) "**_A Multi-agent Q-learning Framework for Optimizing Stock Trading Systems_**". In: Hameurlain A., Cicchetti R., Traunmüller R. (eds) Database and Expert Systems Applications. DEXA 2002. Lecture Notes in Computer Science, vol 2453. Springer, Berlin, Heidelberg [[PDF](http://ftp10.us.freebsd.org/users/azhang/disc/springer/0558/papers/2453/24530153.pdf)] [[Google Scholar (11)](https://scholar.google.com/scholar?cluster=12722630045314905670&hl=en&as_sdt=0,5)]
+* Lee, Jae Won, and O. Jangmin. "**_A multi-agent Q-learning framework for optimizing stock trading systems_**" International Conference on Database and Expert Systems Applications. Springer, Berlin, Heidelberg, 2002. [[PDF](http://ftp10.us.freebsd.org/users/azhang/disc/springer/0558/papers/2453/24530153.pdf)] [[Google Scholar (11)](https://scholar.google.com/scholar?cluster=12722630045314905670&hl=en&as_sdt=0,5)]
 
   The paper presents multi-agent RL architecture containing four agents: for generating buy signal, executing buy signal, generating sell signal, and executing sell signal. Each are running Q-learning. Operating on EOD data, with dataset from KOSPI 200 stocks from Jan 1999 to Oct 2001 (less than 3 years). Claimed good result on the test set (about 4 months period). This paper presents interesting multi-agent architecture, but the details are a bit unclear.    
 
@@ -67,9 +76,13 @@ List of companies that have successfully applied machine learning or deep learni
   This paper analyses the 5-minute interval price of 43 commodities and FX futures over 23 year period. It uses standard NN with four hidden layers of 1000, 900, 800, and 700 neurons and 129 output neurons (three signals (up, down, and neutral) for each of the 43 securities). The input is extended with additional indicators and correlation with other securities, making a total of 9895 input features for the network. Good results were claimed.  
   
 
-### On Order Books
+### On Market Microstructure
 
 #### Theory
+
+* Rama Cont, Arseniy Kukanov, Sasha Stoikov. "**_The Price Impact of Order Book Events_**". 2011 [[PDF](https://pdfs.semanticscholar.org/d064/5eb3d744f9e962ff09b8a5e9156f2147e983.pdf)] [[Google Scholar (194)](https://scholar.google.com/scholar?cluster=15147414922236014366&hl=en&as_sdt=0,5)]
+
+  The authors study the price impact of order book events - limit orders, market orders and cancelations to equity price. They show that, over short time intervals, price changes are mainly driven by the order flow imbalance (OFI), defined as the imbalance between supply and demand at the best bid and ask prices. Further they show that there is a linear relation between OFI and price movement and argues that OFI captures other relationships such as between trade order imbalance or traded volume and price movement.
 
 * Charles Cao & Oliver Hansch & Xiaoxin Wang, 2009. "**_The information content of an open limit order book,_**" Journal of Futures Markets, John Wiley & Sons, Ltd., vol. 29(1), pages 16-41 [[PDF](https://pdfs.semanticscholar.org/3234/ac395016bcd8b9907df6e2f7c49d56242f50.pdf)] [[Google Scholar (210)](https://scholar.google.com/scholar?cluster=5312431820185241274&hl=en&as_sdt=0,5)]
 
@@ -84,7 +97,37 @@ and value-motivated traders. The former submit limit orders to reduce trading co
 
 * Lee, Charles, and Mark J. Ready. "**_Inferring trade direction from intraday data._**" The Journal of Finance 46.2 (1991): 733-746. [[PDF](https://www.acsu.buffalo.edu/~keechung/MGF743/Readings/Inferring%20trade%20direction%20from%20intraday%20data.pdf)] [[Google Scholar (3021)](https://scholar.google.com/scholar?cluster=11859816935661177512&hl=en&as_sdt=2005&sciodt=0,5)]
 
-   In this paper, the authors propose _tick test_, a technique which infers the direction of a trade by comparing its price to the price of the preceding trade(s). The test classifies each trade into four categories: an uptick, a downtick, a zero-uptick, and a zero-downtick. A trade is an uptick (downtick) if the price is higher (lower) than the price of the previous trade. When the price is the same as the previous trade (a zero tick), if the last price change was an uptick, then the trade is a zero-uptick. Similarly, if the last price change was a downtick, then the trade is a zero-downtick. A trade is classified as a buy if it occurs on an uptick or a zero-uptick; otherwise it is classified as a sell.
+   In this paper, the authors explains _tick test_, a technique to infers the direction of a trade by comparing its price to the price of the preceding trade(s), and proposes a hybrid method that combines it with _quote method_ to increase accuracy. The tick test classifies each trade into four categories: an uptick, a downtick, a zero-uptick, and a zero-downtick. A trade is an uptick (downtick) if the price is higher (lower) than the price of the previous trade. When the price is the same as the previous trade (a zero tick), if the last price change was an uptick, then the trade is a zero-uptick. Similarly, if the last price change was a downtick, then the trade is a zero-downtick. A trade is classified as a buy if it occurs on an uptick or a zero-uptick; otherwise it is classified as a sell.
+   
+   The accuracy of Lee and Ready hybrid method has been compared with other methods such as tick test and quote methods and it was found that while the accuracy in general is better than tick test (80.8% on average vs 77.2%), it is not as good as what Lee & Ready suggested (more than 90%). The summaries of the results are as follows [source: 'tick-test', private repository].
+   
+   |        Paper            |   Dataset   |Tick Test | Rev Tick Test | Quote | L & R |
+   |-------------------------|-------------|:--------:|:-------------:|:-----:|:-----:|
+   | Aitken and Frino [1996] | ASX         | 74.4%    |               |       |       |
+   | Ellis, et al. [2000]    | Nasdaq      | 77.7%    |               | 76.4% | 81.0% |
+   | Odders-White [2000]     | TORQ (NYSE) | 78.6%    |               | 74.9% | 85.0% |
+   | Theissen [2001]         | Frankfurt SE| 72.2%    |               | 75.4% | 72.8% |
+   | Finucane [2000]         | TORQ (NYSE) | 83.0%    | 72.1%         |       | 84.4% |
+   | **Average**             |             | **77.2%** | **72.1%**    | **75.6%** | **80.8%** |
+   
+   References:
+   
+    * Aitken, Michael, and Alex Frino. "_**The accuracy of the tick test: Evidence from the Australian stock exchange.**_" 
+      Journal of Banking & Finance 20.10 (1996): 1715-1729.
+      [[Google Scholar (103)](https://scholar.google.co.id/scholar?cluster=11526285019126824797&hl=en&as_sdt=0,5)]
+    * Ellis, Katrina, Roni Michaely, and Maureen O'Hara. "_**The accuracy of trade classification rules: Evidence from Nasdaq.**_" 
+      Journal of Financial and Quantitative Analysis 35.4 (2000): 529-551.
+      [[Google Scholar (467)](https://scholar.google.co.id/scholar?cluster=16725554999272992783&hl=en&as_sdt=0,5)]
+    * Odders-White, Elizabeth R. "_**On the occurrence and consequences of inaccurate trade classification.**_" 
+      Journal of Financial Markets 3.3 (2000): 259-286.
+      [[Google Scholar (273)](https://scholar.google.co.id/scholar?cluster=1157070048670264356&hl=en&as_sdt=0,5)]
+    * Theissen, Erik. "_**A test of the accuracy of the Lee/Ready trade classification algorithm.**_" 
+      Journal of International Financial Markets, Institutions and Money 11.2 (2001): 147-165.
+      [[Google Scholar (62)](https://scholar.google.co.id/scholar?cluster=12358541067434974138&hl=en&as_sdt=0,5)]
+    * Finucane, Thomas J. "_**A direct test of methods for inferring trade direction from intra-day data.**_" 
+      Journal of Financial and Quantitative Analysis 35.4 (2000): 553-576.
+      [[Google Scholar (153)](https://scholar.google.co.id/scholar?cluster=1407349205202244755&hl=en&as_sdt=0,5)]
+  
   
 
 #### Using RNN
@@ -107,7 +150,7 @@ and value-motivated traders. The former submit limit orders to reduce trading co
 * Lopez de Prado, Marcos. "**_The 10 Reasons Most Machine Learning Funds Fail._**" (2018). [[SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3104816)] [[Google Scholar (0)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Prado+The+10+Reasons+Most+Machine+Learning+Funds+Fail&btnG=)]
 
 
-#### Order Book
+#### Market Microstructure
 
 * Matthew Dixon, "**_Sequence classification of the limit order book using recurrent neural networks_**", Journal of Computational Science, Volume 24, 2018, Pages 277-286, ISSN 1877-7503, [[URL](http://www.sciencedirect.com/science/article/pii/S1877750317309675)] [[PDF](https://www.sciencedirect.com/science/article/pii/S1877750317309675)] [[Google Scholar (7)](https://scholar.google.com/scholar?cluster=11756832130786467866&hl=en&as_sdt=2005&sciodt=0,5)]
 
@@ -115,11 +158,27 @@ and value-motivated traders. The former submit limit orders to reduce trading co
 
 * D. Palguna and I. Pollak, "**_Mid-Price Prediction in a Limit Order Book,_**" (December 31, 2014) [[SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2544361)] [[PDF](https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID2544361_code1615147.pdf?abstractid=2544361&mirid=1)]  [[Google Scholar (6)](https://scholar.google.com/scholar?cluster=10479489130084858948&hl=en&as_sdt=0,5)]
 
-* B. Zheng, E. Moulines and F. Abergel, "**_Price Jump Prediction in a Limit Order Book,_**" _Journal of Mathematical Finance_, Vol. 3 No. 2, 2013, pp. 242-255 [[PDF](http://file.scirp.org/pdf/JMF_2013052414582995.pdf)] [[Google Scholar (20)](https://scholar.google.com/scholar?cluster=8926587948972519125&hl=en&as_sdt=2005&sciodt=0,5)]
+* B. Zheng, E. Moulines and F. Abergel, "**_Price Jump Prediction in a Limit Order Book_**" _Journal of Mathematical Finance_, Vol. 3 No. 2, 2013, pp. 242-255 [[PDF](http://file.scirp.org/pdf/JMF_2013052414582995.pdf)] [[Google Scholar (20)](https://scholar.google.com/scholar?cluster=8926587948972519125&hl=en&as_sdt=2005&sciodt=0,5)]
 
 * Kearns, Michael, and Yuriy Nevmyvaka. "**_Machine learning for market microstructure and high frequency trading_**." High Frequency Trading: New Realities for Traders, Markets, and Regulators (2013). [[PDF](http://www.smallake.kr/wp-content/uploads/2014/01/KearnsNevmyvakaHFTRiskBooks.pdf)] [[Google Scholar (22)](https://scholar.google.com/scholar?cluster=3674704136917952284&hl=en&as_sdt=0,5)]
 
-* Rama Cont, Arseniy Kukanov, Sasha Stoikov. "**_The Price Impact of Order Book Events_**". 2010 [[PDF](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.755.4233&rep=rep1&type=pdf)] [[Google Scholar (194)](https://scholar.google.com/scholar?cluster=15147414922236014366&hl=en&as_sdt=0,5)]
+* Rama Cont, Arseniy Kukanov, Sasha Stoikov. "**_The Price Impact of Order Book Events_**". 2011 [[PDF](https://pdfs.semanticscholar.org/d064/5eb3d744f9e962ff09b8a5e9156f2147e983.pdf)] [[Google Scholar (194)](https://scholar.google.com/scholar?cluster=15147414922236014366&hl=en&as_sdt=0,5)]
+
+  The authors study the price impact of order book events - limit orders, market orders and cancelations to equity price, using the NYSE TAQ data for 50 U.S. stocks. They show that, over short time intervals, price changes are mainly driven by the order flow imbalance, defined as the imbalance between supply and demand at the best bid and ask prices.
+
+  Interesting papers cited:
+  * Eisler, Zoltan, Jean-Philippe Bouchaud, and Julien Kockelkoren. "The price impact of order book events: market orders, limit orders and cancellations." Quantitative Finance 12.9 (2012): 1395-1419. [[PDF](https://arxiv.org/pdf/0904.0900)] [[Google Scholar (105)](https://scholar.google.com/scholar?cluster=10991371471005487446&hl=en&as_sdt=0,5)]
+  * Hautsch, Nikolaus, and Ruihong Huang. "The market impact of a limit order." Journal of Economic Dynamics and Control 36.4 (2012): 501-522. [[PDF](https://www.econstor.eu/bitstream/10419/39308/1/612287254.pdf)] [[Google Scholar (112)](https://scholar.google.com/scholar?cluster=14154850011786678034&hl=en&as_sdt=0,5)]
+  * Avellaneda, Marco, Josh Reed, and Sasha Stoikov. "Forecasting prices from Level-I quotes in the presence of hidden liquidity." Algorithmic Finance 1.1 (2011): 35-43. [[PDF](https://content.iospress.com/download/algorithmic-finance/af004?id=algorithmic-finance%2Faf004)] [[Google Scholar (35)](https://scholar.google.com/scholar?cluster=8343363853300442598&hl=en&as_sdt=0,5)]
+  * Hopman, Carl. "Do supply and demand drive stock prices?." Quantitative Finance 7.1 (2007): 37-53. [[Google Scholar (55)](https://scholar.google.com/scholar?cluster=5491481593115357299&hl=en&as_sdt=0,5)]
+  * Weber, Philipp, and Bernd Rosenow*. "**_Order book approach to price impact_**" Quantitative Finance 5.4 (2005): 357-364. [[PDF](https://arxiv.org/pdf/cond-mat/0311457)] [[Google Scholar (157)](https://scholar.google.com/scholar?cluster=12995251003638085426&hl=en&as_sdt=0,5)]
+  * Bouchaud, Jean-Philippe, et al. "**_Fluctuations and response in financial markets: the subtle nature of random price changes_**" Quantitative finance 4.2 (2004): 176-190. [[PDF](https://arxiv.org/pdf/cond-mat/0307332)] [[Google Scholar (400)](https://scholar.google.com/scholar?cluster=10344048419493002618&hl=en&as_sdt=0,5)]
+  * Engle, Robert F., and Asger Lunde. "Trades and quotes: a bivariate point process." Journal of Financial Econometrics 1.2 (2003): 159-188. [[PDF](https://academic.oup.com/jfec/article-pdf/1/2/159/2444267/nbg011.pdf)] [[Google Scholar (163)](https://scholar.google.com/scholar?cluster=14029022516470199418&hl=en&as_sdt=0,5)]
+  * Hasbrouck, Joel, and Duane J. Seppi. "Common factors in prices, order flows, and liquidity." Journal of financial Economics 59.3 (2001): 383-411. [[PDF](https://www.archive.nyu.edu/bitstream/2451/26848/2/wpa99011.pdf)] [[Google Scholar (1143)](https://scholar.google.com/scholar?cluster=15977843785483107545&hl=en&as_sdt=0,5)]
+  * Knez, Peter J., and Mark J. Ready. "**_Estimating the profits from trading strategies._**" The Review of Financial Studies 9.4 (1996): 1121-1163. [[PDF](http://www.technicalanalysis.org.uk/reversal-patterns/KnRe96.pdf)] [[Google Scholar (162)](https://scholar.google.com/scholar?cluster=8722874810495216777&hl=en&as_sdt=0,5)]
+  * Karpoff, Jonathan M. "The relation between price changes and trading volume: A survey." Journal of Financial and quantitative Analysis 22.1 (1987): 109-126. [[PDF](https://www.researchgate.net/profile/Jonathan_Karpoff/publication/227406040_The_Relation_Between_Price_Changes_and_Trading_Volume_A_Survey/links/53cecd5a0cf2fd75bc59a213/The-Relation-Between-Price-Changes-and-Trading-Volume-A-Survey.pdf)] [[Google Scholar (2873)](https://scholar.google.com/scholar?cluster=18087812455019644743&hl=en&as_sdt=0,5)]
+
+* Krishnamurti, Chandrasekhar. "Introduction to market microstructure." Investment management. Springer, Berlin, Heidelberg, 2009. 13-29. [[PDF](http://www.springer.com/cda/content/document/cda_downloaddocument/9783540888017-c1.pdf)] [[Google Scholar (10)](https://scholar.google.com/scholar?cluster=4191178735967067647&hl=en&as_sdt=0,5)]
 
 * Chordia, Tarun, Richard Roll, and Avanidhar Subrahmanyam. "**_Order imbalance, liquidity, and market returns._**" Journal of Financial economics 65.1 (2002): 111-130. [[PDF](http://www.cis.upenn.edu/~mkearns/finread/Chordia_buy-sell_orders.pdf)] [[Google Scholar (970)](https://scholar.google.com/scholar?cluster=11113798686198861834&hl=en&as_sdt=0,5)]
 
