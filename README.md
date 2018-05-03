@@ -29,7 +29,7 @@ List of companies that have successfully applied machine learning or deep learni
 
 * Marcos Lopez de Prado: [**_Advances in Financial Machine Learning_**](http://a.co/gKz8hpa). John Wiley & Sons, 2018. [[Google Scholar (2)](https://scholar.google.com/scholar?lookup=0&q=Advances+in+Financial+Machine+Learning&hl=en&as_sdt=0,5)] 
 
-  This is a very good book describing how to structure the use of machine learning in finance. The [first chapter](https://poseidon01.ssrn.com/delivery.php?ID=521087021095126103013122009108119098033054052039028007076097107111067094069091074068054032007059016029043022070095121122119022016038095048036074098066064114066030068061049125122024004103070072091079107084089027065116124122101097090028025105007065020&EXT=pdf) is available online and it outlines the main ideas that will be taught in the rest of the books. This book is written by someone who knows both finance and machine learning subjects very well. The author is an expert in mathematical finance, has written many papers on machine learning and supercomputing, and has $13 billion fund under his management. He knows what he's talking about.
+  This is a good book describing how to structure the use of machine learning in finance. The [first chapter](https://poseidon01.ssrn.com/delivery.php?ID=521087021095126103013122009108119098033054052039028007076097107111067094069091074068054032007059016029043022070095121122119022016038095048036074098066064114066030068061049125122024004103070072091079107084089027065116124122101097090028025105007065020&EXT=pdf) is available online and it outlines the main ideas that will be taught in the rest of the books. This book is written by someone who knows both finance and machine learning subjects very well. The author is an expert in mathematical finance, has written many papers on machine learning and supercomputing, and has $13 billion fund under his management. He knows what he's talking about.
   
   In this book, he describes 1) why many failed to apply ML to finance, and 2) what it takes to succeed. And he argues that what it takes to succeed is first you must realize that there is no silver bullet, no magic ML model that will put you in the list of billionaires, and what you must do instead is to establish the infrastructure and process to facilitate the creation and development of these models.
   
@@ -39,7 +39,7 @@ List of companies that have successfully applied machine learning or deep learni
 
 * Schmidt, Anatoly B. [**_Financial markets and trading: an introduction to market microstructure and trading strategies._**](http://a.co/fqw6BrI) Vol. 637. John Wiley & Sons, 2011. [[Google Scholar (28)](https://scholar.google.com/scholar?cluster=2144017200463163368&hl=en&as_sdt=0,5)]
 
-
+  This book is divided into three parts: 1) introduction to market structure and various models to describe how it works, 2) theories about market dynamics, 3) introduction on trading strategies focusing on technical analysis and arbitrage and discussion on aspects such as backtesting and execution. Probably not for newbie due to heavy maths used throughout the book. Part 3 is not very deep.
 
 ## Papers, Thesis
 
